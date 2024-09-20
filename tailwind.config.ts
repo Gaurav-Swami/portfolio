@@ -9,9 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#ECCEAE",
-        primaryText: "#131842",
+        background: "#222831",
+        primaryText: "#EEEEEE",
+        accent: "#00ADB5",
       },
+      // colors: {
+      //   background: "#ECCEAE",
+      //   primaryText: "#131842",
+      // },
     },
   },
   plugins: [],

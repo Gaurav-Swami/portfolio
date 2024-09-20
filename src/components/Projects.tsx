@@ -9,8 +9,10 @@ const Card = ({ url }: { url: string }) => {
 
 export default function Projects() {
   return (
-    <div className="grid place-items-center text-7xl text-background">
-      <span className="">Projects</span>
+    <div className="grid place-items-center  text-background py-[120px] ">
+      <span className="font-bold text-[40px] tracking-widest">PROJECTS</span>
+      <span className="rounded-full bg-accent w-8 mt-4  h-[5px]"></span>
+      
 
       <div className="flex flex-col gap-y-10 pt-10">
         <Card

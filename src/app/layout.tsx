@@ -8,8 +8,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" px-16 z-10">
-        <Header />
+      <body className="  z-10">
+        {/* <Header /> */}
         {children}
       </body>
     </html>

@@ -6,7 +6,7 @@ const Card = ({ url }: { url: string }) => {
     </div>
   );
 };
-
+//card for cleanliness
 export default function Projects() {
   return (
     <div className="grid place-items-center  text-background py-[120px] ">
@@ -15,7 +15,7 @@ export default function Projects() {
       
 
       <div className="flex flex-col gap-y-10 pt-10">
-        <Card
+        <Card 
           url={
             "https://webneel.com/daily/sites/default/files/images/daily/02-2014/10-beautiful-websites.jpg"
           }

@@ -6,7 +6,7 @@ const Card = ({ url }: { url: string }) => {
     </div>
   );
 };
-//card for cleanliness
+//card for cleanlinesss
 export default function Projects() {
   return (
     <div className="grid place-items-center  text-background py-[120px] ">

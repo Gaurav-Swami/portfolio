@@ -22,7 +22,7 @@ const Links = () => {
 
 const Button = ({ text, link }: { text: string; link: string }) => {
   return (
-    <button className=" text-2xl text-primaryText bg-accent py-4 px-16 rounded-full font-bold sticky hover:text-accent hover:bg-primaryText border-2 transition-all border-accent">
+    <button className=" text-2xl text-primaryText bg-accent py-4 w-56 rounded-full font-bold sticky hover:text-accent hover:bg-primaryText border-2 transition-all border-accent">
       <span>{text}</span>
       {/* <div className=" inline ">
         <PiGreaterThanBold className="inline  " />

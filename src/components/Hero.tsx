@@ -43,7 +43,7 @@ export default function Hero() {
           convenient <br /> websites that also serves the purpose of the
           companies
         </div>
-        {/* <Links /> */}
+        <Links />
         <div className="flex justify-center gap-x-4 mt-12">
           <Button text={"HOME"} link={"xxx"} />
           <Button text={"ABOUT"} link={"xxx"} />
@@ -51,6 +51,7 @@ export default function Hero() {
           <Button text={"CONTACT"} link={"xxx"} />
         </div>
       </div>
+      
     </div>
   );
 }

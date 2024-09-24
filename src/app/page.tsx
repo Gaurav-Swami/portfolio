@@ -7,6 +7,8 @@ export default function Home() {
     <div className="">
       <Hero />
       <Projects/>
+      {/* <About/>
+      <Contact/> */}
       <br />
       <br />
       <br />

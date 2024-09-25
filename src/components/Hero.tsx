@@ -33,15 +33,13 @@ const Button = ({ text, link }: { text: string; link: string }) => {
 
 export default function Hero() {
   return (
-    <div className=" flex flex-col p-2 items-center justify-center   h-screen bg-primaryText ">
+    <div className=" flex flex-col p-2 items-center justify-center   h-screen  ">
       <div className="">
         <div className="text-6xl text-background text-center font-bold">
           HEY, I'M GAURAV SWAMI
         </div>
         <div className="text-center text-background text-[22px] mt-8">
-          A Full Stack Web Developer whose aim is to create user friendly and
-          convenient <br /> websites that also serves the purpose of the
-          companies
+        A Full Stack Web Developer dedicated to crafting user-friendly and efficient <br />websites that effectively meet the needs of businesses.
         </div>
         <Links />
         <div className="flex justify-center gap-x-4 mt-12">

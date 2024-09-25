@@ -1,6 +1,15 @@
 import { FaGithub } from "react-icons/fa";
 import { CiLink } from "react-icons/ci";
 
+interface CardProps {
+  imageUrl: string;
+  color: string;
+  title: string;
+  description: string;
+  githubUrl: string;
+  livePreviewUrl: string;
+}
+
 const Card = ({
   imageUrl,
   color,
@@ -8,14 +17,7 @@ const Card = ({
   description,
   githubUrl,
   livePreviewUrl,
-}: {
-  imageUrl: string;
-  color: string;
-  title: string;
-  description: string;
-  githubUrl: string;
-  livePreviewUrl: string;
-}) => {
+}: CardProps) => {
   return (
     <div
       className={`box-border flex gap-x-8  h-[550px] overflow-clip rounded-[64px] relative group hover:-translate-y-1 duration-500 ease-out hover:shadow-2xl border-b border-r`}
@@ -67,13 +69,13 @@ const Card = ({
 };
 //card for cleanlinesss
 export default function Projects() {
-  const cardData = [
+  const cardData: CardProps[] = [
     {
       imageUrl:
         "https://res.cloudinary.com/dv20rxoei/image/upload/v1727199849/Screenshot_16_ihiftc.png",
       color: "#9997ff",
       title: "ASTROSITY",
-      descrition: "A blog website for space lovers",
+      description: "A blog website for space lovers",
       githubUrl: "https://github.com/Gaurav-Swami/astrosity",
       livePreviewUrl: "https://astrosity.vercel.app/",
     },
@@ -82,7 +84,7 @@ export default function Projects() {
         "https://res.cloudinary.com/dv20rxoei/image/upload/v1727200003/Screenshot_2024-09-24_231616_cgccku.png",
       color: "#7886a3",
       title: "NIKE WEBSITE",
-      descrition: "A static clone of Nike website",
+      description: "A static clone of Nike website",
       githubUrl: "https://github.com/Gaurav-Swami/nike-landing-page",
       livePreviewUrl: "https://sparkling-treacle-6b4726.netlify.app//",
     },
@@ -91,7 +93,7 @@ export default function Projects() {
         "https://res.cloudinary.com/dv20rxoei/image/upload/v1727200287/Screenshot_19_wf4gpj.png",
       color: "#86efac",
       title: "NORDPASS",
-      descrition: "A strong password generator",
+      description: "A strong password generator",
       githubUrl: "https://github.com/Gaurav-Swami/pass-gen",
       livePreviewUrl: "https://passwordgeneratorbygorv.netlify.app/",
     },
@@ -111,12 +113,10 @@ export default function Projects() {
             imageUrl={data.imageUrl}
             color={data.color}
             title={data.title}
-            description={data.descrition}
+            description={data.description}
           />
         ))}
       </div>
     </div>
   );
 }
-
-import React from "react";

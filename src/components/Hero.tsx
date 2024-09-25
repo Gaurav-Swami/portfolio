@@ -6,7 +6,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import { PiGreaterThanBold } from "react-icons/pi";
+// import { PiGreaterThanBold } from "react-icons/pi";
 
 const Links = () => {
   return (

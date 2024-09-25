@@ -103,8 +103,13 @@ export default function Projects() {
     <div className="grid place-items-center  text-background py-[120px] px-16">
       <span className="font-bold text-[40px] tracking-widest">PROJECTS</span>
       <span className="rounded-full bg-accent w-8 mt-4  h-[5px]"></span>
+      <span className="text-xl text-center pt-6">
+        Here are some of the projects that I have created in the recent years
+        <br />
+        you can look at the code and also try them live.
+      </span>
 
-      <div className="flex flex-col gap-y-16 pt-10">
+      <div className="flex flex-col gap-y-16 pt-24">
         {cardData.map((data, index) => (
           <Card
             key={index}

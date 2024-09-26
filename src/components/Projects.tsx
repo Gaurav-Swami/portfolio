@@ -20,7 +20,7 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`box-border flex gap-x-8  h-[550px] overflow-clip rounded-[64px] relative group hover:-translate-y-1 duration-500 ease-out hover:shadow-2xl border-b border-r`}
+      className={` box-border flex gap-x-8  h-[550px] overflow-clip rounded-[64px] relative group hover:-translate-y-1 duration-500 ease-out hover:shadow-2xl border-b border-r`}
       style={{ backgroundColor: color }}
     >
       <div className="flex flex-col text-background">

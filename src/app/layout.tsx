@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="  z-10 ">
+      <body className=" ">
 
         <Header />
         {children}

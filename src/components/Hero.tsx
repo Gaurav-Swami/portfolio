@@ -80,12 +80,12 @@ export default function Hero() {
           websites that effectively meet the needs of businesses.
         </div>
         <Links />
-        <div className="flex justify-center gap-x-4 mt-12">
+        {/* <div className="flex justify-center gap-x-4 mt-12">
           <Button text={"HOME"} link={"xxx"} />
           <Button text={"ABOUT"} link={"xxx"} />
           <Button text={"PROJECTS"} link={"xxx"} />
           <Button text={"CONTACT"} link={"xxx"} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

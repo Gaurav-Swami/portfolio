@@ -1,16 +1,23 @@
-
-
 const Header: React.FC = () => {
+  const Button = ({ text, link }: { text: string; link: string }) => {
+    return (
+      <button className=" text-2xl text-primaryText bg-accent py-4 w-56 rounded-full font-bold sticky hover:text-accent hover:bg-primaryText border-2 transition-all border-accent">
+        <span className="text-center  ">{text}</span>
+        <span className="invisible absolute">{link}</span>
+        {/* <div className=" inline ">
+          <PiGreaterThanBold className="inline  " />
+        </div> */}
+      </button>
+    );
+  };
   return (
-    <div
-      className={`fixed left-0 right-0 bg-white py-6 flex justify-center w-full text-xl transition-opacity duration-300 `}
-    >
-      <ul className="flex gap-x-8 text-black">
-        <li className="hover:opacity-65 cursor-pointer">HOME</li>
-        <li className="hover:opacity-65 cursor-pointer">ABOUT</li>
-        <li className="hover:opacity-65 cursor-pointer">PROJECTS</li>
-        <li className="hover:opacity-65 cursor-pointer">CONTACTS</li>
-      </ul>
+    <div className="flex  items-center justify-center w-full gap-x-4 mt-12 absolute top-[450px]">
+      {/* <div className=""> */}
+        <Button text={"HOME"} link={"xxx"} />
+        <Button text={"ABOUT"} link={"xxx"} />
+        <Button text={"PROJECTS"} link={"xxx"} />
+        <Button text={"CONTACT"} link={"xxx"} />
+      {/* </div> */}
     </div>
   );
 };

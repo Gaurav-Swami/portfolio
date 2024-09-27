@@ -12,7 +12,7 @@ const Button = ({ text, goToY, navbarPos }: buttonInterface) => {
   return (
     <button
       onClick={() => window.scrollTo({ top: goToY })}
-      className={` text-lg  py-[6px] font-semibold text-primaryText    rounded-full  sticky hover:text-black hover:bg-accent duration-300 border-accent px-6 ${
+      className={` text-lg  py-[6px] font-semibold text-background    rounded-full  sticky hover:text-black hover:bg-accent duration-300 border-accent px-6 ${
         navbarPos == "fixed" ? " " : " "
       } `}
     >
@@ -46,8 +46,8 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`flex  items-center justify-center w-full gap-x-4 transition ${
-        navbarPos == "fixed" ? "fixed" : "absolute top-[450px] z-50 mt-12 "
+      className={`flex  items-center justify-center w-full gap-x-4 z-50 transition ${
+        navbarPos == "fixed" ? "fixed" : "absolute top-[450px]  mt-12 "
       }`}
     >
       <div

@@ -45,6 +45,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
+    // thanks @j_dexx on reddit for helping me to fix the problem of overlapping header
     <div
       className={`flex  items-center justify-center w-full gap-x-4 z-50 transition ${
         navbarPos == "fixed" ? "fixed" : "absolute top-[450px]  mt-12 "

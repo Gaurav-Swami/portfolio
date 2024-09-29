@@ -1,4 +1,4 @@
-import { DiVim } from "react-icons/di";
+// import { DiVim } from "react-icons/di";
 
 const About = () => {
   const skills = [

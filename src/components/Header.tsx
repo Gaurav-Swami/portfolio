@@ -58,8 +58,8 @@ const Header: React.FC = () => {
       >
         <Button text={"Home"} goToY={0} navbarPos={navbarPos} />
         <Button text={"About"} goToY={740} navbarPos={navbarPos} />
-        <Button text={"Projects"} goToY={1150} navbarPos={navbarPos} />
-        <Button text={"Contact"} goToY={3415} navbarPos={navbarPos} />
+        <Button text={"Projects"} goToY={1710} navbarPos={navbarPos} />
+        <Button text={"Contact"} goToY={3990} navbarPos={navbarPos} />
       </div>
     </div>
   );

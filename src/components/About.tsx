@@ -1,4 +1,5 @@
 // import { DiVim } from "react-icons/di";
+"use client";
 
 const About = () => {
   const skills = [
@@ -26,8 +27,8 @@ const About = () => {
           journey.
         </span>
       </div>
-      <div className="flex mt-[90px] gap-x-16">
-        <div className="w-[570px] text-lg">
+      <div className="flex mt-[90px] gap-x-20">
+        <div className="w-[570px] text-lg ">
           <h2 className="text-[26px] font-bold pb-[30px]">
             Know more about me!{" "}
           </h2>
@@ -44,18 +45,25 @@ const About = () => {
           collaborating with cross-functional teams, embracing agile
           methodologies, and staying updated with the latest technologies to
           continuously enhance your projects and drive innovation.
+          <button
+            onClick={() => window.scrollTo({ top: 3990 })}
+            className="bg-accent mt-10 text-background text-sm rounded  px-[50px] py-[15px] font-bold shadow-lg hover:-translate-y-1 ease-out duration-300"
+          >
+            CONTACT
+          </button>
         </div>
+
         <div>
-          <h2 className="text-[26px] font-bold pb-[30px]">My Skills   </h2>
+          <h2 className="text-[26px] font-bold pb-[30px]">My Skills </h2>
 
           <div className="flex w-[570px] gap-3 flex-wrap">
             {skills.map((skill, index) => (
-              <button
+              <span
                 className=" py-[10px] rounded-lg px-5 bg-[#DCDCDC] font-semibold opacity-85"
                 key={index}
               >
                 {skill}
-              </button>
+              </span>
             ))}
           </div>
         </div>

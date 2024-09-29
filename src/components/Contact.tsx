@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
         />
         <button
           type="submit"
-          className="bg-accent text-white rounded absolute right-10 bottom-10 px-20 py-4 font-bold shadow-lg hover:-translate-y-1 ease-out duration-300"
+          className="bg-accent text-background rounded absolute right-10 bottom-10 px-20 py-4 font-bold shadow-lg hover:-translate-y-1 ease-out duration-300"
           disabled={state.submitting}
         >
           SUBMIT
